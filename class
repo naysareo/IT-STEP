@@ -153,3 +153,7 @@ print(results)
 one = 1
 results = 'Первый{one},второй{1}'.format('hi','second',two=2,one=one) 
 print(one)
+
+#text_val = 'Первый{one:x},второй{two}'
+#text_format = text_val.format(one=10,two=2)
+#print(text_format)
