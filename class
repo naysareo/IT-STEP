@@ -1,3 +1,9 @@
+#DOOM
+#December - Januar - Febuary -
+
+
+
+
 #num_1 = input("Действие: / , * " )
 #num_2 = int(input("Введите число: " ))
 #num_3 = int(input("введите число: " ))
@@ -143,3 +149,7 @@
 
 results = '{}Первый{},второй{2{}'.format('hi','second',two=2,one=1) 
 print(results)
+
+one = 1
+results = 'Первый{one},второй{1}'.format('hi','second',two=2,one=one) 
+print(one)
