@@ -157,3 +157,7 @@ print(one)
 #text_val = 'Первый{one:x},второй{two}'
 #text_format = text_val.format(one=10,two=2)
 #print(text_format)
+
+#string = "{:{}{}{}}"
+#print(string.format("Питон","-","^",9))
+#Вывод 'Питон:_^9' прочитать про спецификатор
