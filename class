@@ -1,0 +1,145 @@
+#num_1 = input("Действие: / , * " )
+#num_2 = int(input("Введите число: " ))
+#num_3 = int(input("введите число: " ))
+
+#if num_3 == 0 and (num_1 == "/" or num_1 == "*"):
+    #print("Null")
+#elif num_1 == "/":
+    #num_4 = num_2/num_3
+    #print("Результат деления: " + str(num_4))
+#elif num_1 == "*":
+    #num_4 == num_2*num_3
+    #print("Результат умножения: " + str(num_4))
+#else:
+    #print("Введен неверный символ")
+
+#i = 0
+#while True:
+    #print(i)
+    #i+=1
+    #if i == 5000:
+        #break
+
+#i = 0
+#while i < 50:
+    #if i == 0:
+        #print(i)
+    #i+=1
+
+#while True:
+    #moto_distance = int(input("Дистанция в км:" ))
+    #auto_distance = 
+    #moto_time = int(input("Время в пути в ч:" ))
+    
+    #if moto_distance == 0 and moto_time == 0:
+        #print("Введены неверныеданные")
+    #elif moto_distance == 0 and moto_time != 0: 
+        #print("Движение не было произведено, дистанция равна 0км ")
+    #elif moto_time == 0 and moto_distance != 0:
+        #print("Время в пути 0 часов. Введите данные с учетом")
+    #elif moto_speed == auto_speed:
+        #print("у них одинаковая скорость")
+    #elif moto_speed > auto_speed:
+        #print("Скорость мотоциклиста больше")
+    #elif moto_speed < auto_speed:
+        #print("Скорость автомобилиста больше")
+    #what = str(input("Для завершения программы нажмите E или e :" ))
+    #if what == "E" or what == "e":
+        #print("Программа завершена!")
+        #break
+#for i in range(20+1, 0, -1):
+    #if i != 0 and i %2 == 0:
+        #print(i)
+#print("_____")
+
+#for i in range(0, 20+1):
+    #if i != 0 and i %2 == 0:
+        #print(i)
+
+#for i in range( , 20-1 ):
+    #print(i)
+#user_str = "string"
+#print(user_str[-1])
+
+
+#user_str = "string"
+#print(user_str[:3] + "A" + user_str[-2:])
+
+#str_val = "string"
+#print(len(str_val))
+#some_str = "one"
+#some_str = "who_know"
+#'one' = 'one' + "who_know"
+
+#while True:
+        #name = input("Наименование товара" )
+        #num = int(input("Количесво товара(ящиков)" ))
+        #what = int(input("На сколько разделить товар(вместимость в ящике)" ))
+        #box = num/what
+        #if box<what:
+            #box2 = num%what
+            #print("Получен товар" + name, "количество товара было распределено по" + box + "ящикам и один в дополнительный неполный ящик" + box2) 
+            
+        #break
+#try:
+    #1//0
+    #int("One")
+#except ValueError :
+    #print("Error")
+    #print("Произошла ошибка")
+#except ZeroDivisionError:
+    #print("Произошло деление на ноль")
+#print("Продолжение работы")
+
+#try:
+    #raise ValueError:
+#except ValueError:
+    #print("Что-то пошло не так")
+#except Exception:
+    #print("Ошибка")
+
+#while True:
+    #num1 = int(input("Введите число:" ))
+    #num2 = int(input("Введите второе число:"))
+    #for i in range(num1,num2+1,):
+        #try:
+            #print("Текущее число - ",i)
+            #if i == 0:
+                #continue
+                #print(i)
+            #elif i % 2 == 0:
+                #raise ValueError
+                #print("Четное",i)
+            #else:
+                #print("Нечетное",i)
+        #except:
+            #print("Error")
+    #exit_val = input("Для выхода нажмите Е, для продолжения нажмите Enter")
+    #if exit_val == "E":
+        #print("Пока")
+        #break
+#try:
+    #print("Working")
+    #raise ZeroDivisionError
+#except ZeroDivisionError:
+    #print("Error")
+#finally:
+    #print("Это работает")
+#try:
+    #block1 = int(input("Введите число " ))
+    #block2 = int(input("Введите второе число " ))
+    #results = block1/block2
+    #raise ZeroDivisionError
+    #results = block1/block2
+#except ZeroDivisionError:
+    #print("Ошибка")
+    #print("Выполняется\nРезультат деления: ", results)
+#finally:
+    #print("Выполняется в любом случае")
+
+#text_val = 'Первый{0},второй{2}'
+#text_format = text_val.format(2,'ppp',1)
+#print(text_format)
+
+results = '{}Первый{},второй{2{}'.format('hi','second',two=2,one=1) 
+print(results)
