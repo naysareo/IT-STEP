@@ -179,3 +179,35 @@ while True:
             break
     except ValueError:
         print("Неверная операция")
+
+
+print(format(1,'f'))
+print(format(1000.5368,'v>-15,.2f'))
+print(format('format','.2'))
+
+
+string = '{}'
+print(string.format({2}).format(1,2,3))
+
+
+
+string = "{{{{{{{{{}}}}}}}}}"
+print(string.format(1,2,3))
+
+
+
+print(format('{1+3}'))
+
+print(f'{1+3}')
+
+
+some_val = 'ой!'
+print(f'{some_val}')
+
+print(f'2+2={2+2:010d}')
+
+заполнмтель = '-'
+выравнивание = '^'
+ширина = '9'
+язык = 'Python'
+print(f"{{язык}{заполнитель}{выравнивание}{ширина}}")
