@@ -163,3 +163,19 @@ print(one)
 #Вывод 'Питон:_^9' прочитать про спецификатор
 
 print("{:^10.2}".format('Python'))
+
+
+
+while True:
+    try:
+        num = int(input("Введите число: \n" ))
+        print("Hex {hex_data:>10x}".format(hex_data=num))
+        print("Decimal {dec_data:>7d}".format(dec_data=num))
+        print("Octal {oct_data:>9o}".format(oct_data=num))
+        print("Binary {bin_data:>18b}".format(bin_data=num))
+        exit_val = input("Для выхода нажмите E, для продолжения Enter - " )
+        if exit_val == "E" or exit_val == "e":
+            print("До встречи! " )
+            break
+    except ValueError:
+        print("Неверная операция")
