@@ -211,3 +211,47 @@ print(f'2+2={2+2:010d}')
 ширина = '9'
 язык = 'Python'
 print(f"{{язык}{заполнитель}{выравнивание}{ширина}}")
+
+
+
+#Литералные колекции
+
+group_378 = ['student_1', 'student_2', 'student_3']
+print(type(group_378), group_378)
+group_379 = ['student_4', 'student_5']
+group_380 = group_378 + group_379
+print(group_380)
+
+
+print(id(group_378),(id(group_379)),(id(group_380)))
+group_379 = group_379 + group_378
+print(group_379)
+print(id(group_379),group_379)
+print(id(group_379.clear),group_379)
+
+
+mark_student_1 = [5, 3, 4, 2]
+mark_student_2 = [3, 2, 5]
+mark_student_2.append(4)
+print(mark_student_2)
+
+print(len(mark_student_2))
+
+
+
+#Работа над созданием "Электронного дневника"
+
+
+name_student = input("Введите имя студента: " )
+marks_student = input("Запишите оценки студента: " )
+while True:
+    list_marks = []
+    update = list_marks.append(marks_student)
+    
+    #quanity_marks = len(marks_student)
+    #average_score = summa // quanity
+    
+    #for i in list_marks:
+        #summ = int(i)
+        #print(summ)
+    print(list_marks)
