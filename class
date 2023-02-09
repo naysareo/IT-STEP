@@ -255,3 +255,70 @@ while True:
         #summ = int(i)
         #print(summ)
     print(list_marks)
+    
+    # List в list
+
+num_list = [1,2,3,4,5]
+new_num_list = num_list.copy()
+print(id(num_list),id(new_num_list))
+num_list[2] = 7
+print(num_list,new_num_list)
+other_list = num_list
+print(num_list,other_list)
+print(id(num_list),id(other_list))
+old_list[:] = num_list
+other_list[2] = 6
+
+
+name_num_list = [['one',1], ['two',2], ['three',3]]
+#print((name_num_list[0],type(name_num_list)))
+#print(type(name_num_list[-1][0]))
+#name_num_list.remove(['two',2])
+#name_num_list.pop()
+#print(name_num_list)
+print(name_num_list.index(['two',2]))
+
+
+new_list = [1,2,5,1,3,7,9,5,1]
+what = new_list.index{
+print(what)
+
+
+
+new_list = [1,2,5,1,3,7,9,5,1]
+print(new_list.index(1,2))
+
+
+
+#name_num_list = [['one',1], ['two',2], ['three',3]]
+#name_num_list.pop(0)
+#print(name_num_list)
+
+
+#new_list = [1,2,5,1,3,7,9,5,1]
+#print(id(new_list))
+#new_list = []
+#print(id(new_list))
+#new_list.clear
+#print(id(new_list))
+
+
+
+new_tuple = tuple()
+print(new_tuple, type(new_tuple))
+new_tuple = ()
+print(new_tuple, type(new_tuple))
+other_tuple = ()
+print(other_tuple, type(other_tuple))
+other_tuple = (1,)
+print(other_tuple, type(other_tuple))
+#other_tuple = other_tuple + 1
+#print(other_tuple)
+
+
+new_list = [1,2,5,1,3,7,9,5,1]
+count = 0 
+for i in num_list
+    if i == 1:
+        print('index = ', count)
+    count += 1
