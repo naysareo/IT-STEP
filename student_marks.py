@@ -23,5 +23,5 @@ while True:
     print("\nДанные студента", name_student, ":\n" )
     print("\nВсе внесенные отметки: \n", list_marks)
     print("\nКоличесво всех выставленных отметок: \n", quanity)
-    print("\nСумма всех отметок для студента: \n", summa)
+    print("\nСумма всех отметок студента: \n", summa)
     print("\nСредний балл студента: ",summa/quanity, "\n\n" )
