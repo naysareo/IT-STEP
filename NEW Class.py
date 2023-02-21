@@ -183,3 +183,189 @@ minus_set = my_set_9 - my_other_set_2
 print(minus_set)
 
 # \.difference ------------
+
+
+
+# 21.02 / 2023
+# list и set
+# проверка id переменных (проверка переменных, а также их копий) - id разные в copy и в переменной без copy
+# 
+#       dip copy это "[:]" под капотом выполняется через   for i in test_list: 
+#                                                          copy_list.append(i)
+#
+#
+#
+#
+
+
+
+# о листах 
+test_list = [ [1], [2], [3] ]
+copy_list = test_list.copy()
+print(id(copy_list))
+copy_list.append(['y'])
+print(copy_list)
+print(id(copy_list))
+
+
+print(id(test_list))
+print(test_list)
+
+test_list.append([4])
+test_list[0][0] = ['x']
+print(test_list)
+
+# ________________________________________
+# пустой сет может быть только один #3
+
+#1 неверно
+test_list = { }
+
+#2 неверно
+test_list = {}
+
+#3 выполняется!!!
+test_list = set()
+# ________________________________________
+
+# /о листах 
+
+
+
+
+# о SET
+
+test_set = set()
+test_set.add('new')
+print(test_set)
+test_set.union('new')
+print(test_set)
+
+print(test_set.union(set('old')))
+# о 178 строке     почему 'old' разбвает в рандомном порядке - идет итерация (это приведенная строка)  |   для того чтобы предотвратить итерацию нужно написать следующие 
+other_set_1 = {'old'}
+test_set.union(other_set_1)
+print(test_set)
+# на 180 и 182 строке мы объявляем {'old'}
+
+
+# проверка вхождения элементов в set
+# оператор in проверяет вхождение и работает во всех коллекциях
+other_set_2 = {'old', 'new', 'real'}
+print(other_set_2)
+if 'real' in other_set_2:
+    print(' \'real\' входит в set' )
+
+# проверяем работу in под капотом через цикл for
+other_set_3 = {'old', 'new', 'real'}
+for i in other_set_3:
+    if i == 'real':
+        print(' \'real\' входит в set ')
+    break
+
+# ОПЕРАТОРЫ СРАВНЕНИЯ
+
+# сравнение через оператор  == :
+a = 20
+b = 20.0
+c = a == b # результат вывода True
+print(c)
+# (проверяет равенство двух объектов)
+
+
+# сравнение через оператор is :
+d = a is b # результат вывода False
+print(d)
+#(проверяет идентичность самих объектов) 
+
+# /ОПЕРАТОРЫ СРАВНЕНИЯ
+
+
+
+
+
+
+
+# NEW update в лист
+
+# не работает 
+
+test_set_5 = {'old', 'new'}
+test_set_5.update([1, 2, 99])
+print(test_set_5)
+
+# /не работает 
+
+test_set_5 = {'old', 'new'}
+test_set_5.update(['string'])
+print(test_set_5)
+
+### set_other = {1, 5 (['string'])}
+
+
+
+
+
+
+other_set_4 = {'old', 'new', 1, 2, 3, 4, 5}
+test_set_6 = {'old', 'new'}
+
+# выводит 
+print('intersection: ', other_set_4.intersection(test_set_6))
+
+# выводит 
+print('union: ', other_set_4.union(test_set_6))
+
+# выводит одну часть
+print('difference: ', other_set_4.difference(test_set_6))
+
+# выводит уникальные для п обоих элементов  то чего нету в первой и в второй перменных 
+print('symmetric_difference: ', other_set_4.symmetric_difference(test_set_6))
+
+# выводит 
+print('issubset: ', other_set_4.issubset(test_set_6))
+
+# выводит
+print('issuperset: ', other_set_4.issuperset(test_set_6))
+
+# выводит
+print('difference_update: ', other_set_4.difference_update(test_set_6))
+
+# выводит
+print('isdisjoint: ', other_set_4.isdisjoint(test_set_6))
+
+
+
+
+# ПРОВЕРЯЕМ ЗАНИМАЕМУЮ ПАМЯТЬ ЧЕРЕЗ getsizeof
+
+from sys import getsizeof
+number = 1_000_000
+
+num_tuple = tuple(range(number))
+num_list = list(range(number))
+num_set = set(range(number))
+
+num_tuple_size = getsizeof(num_tuple)
+num_list_size = getsizeof(num_list)
+num_set_size = getsizeof(num_set)
+
+print("\n\nОбъем памяти tuple: ",num_tuple_size)
+print("Объем памяти list: ",num_list_size)
+print("Объем памяти set: ",num_set_size )
+
+# вывод чисел от 0 до 10
+number_1 = 10
+set_num = set(range(number_1))
+print(set_num)
+
+# ГЕНЕРАТОР - работает в tuple, list, set
+# вывод нечетных чисел через set
+some_set = {i for i in range(1,11)} 
+print(some_set)
+
+
+# /о SET
+
+# H/W нужно вывести результат через один print - входит или не входит чтобы не программа не писала два раза входит(x2) или не входит(x2)
+
