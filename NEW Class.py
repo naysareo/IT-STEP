@@ -369,3 +369,121 @@ print(some_set)
 
 # H/W нужно вывести результат через один print - входит или не входит чтобы не программа не писала два раза входит(x2) или не входит(x2)
 
+
+
+
+# 23.02 / 2023
+# SET и dict
+# dict неупорядочные коллекциии произвольных объектов
+# 
+# 
+# 
+
+
+# НЕЛЬЗЯ присвоить к set " , " ---- { , }
+
+
+# HOMEWORK
+test_set = {1, 2, 3}
+test_list = list(test_set)
+
+test_list.append(5)
+test_set.add(4)
+
+print("\n\n", test_list)
+print(test_set)
+
+test_list[0] = 11
+test_list.insert(3,4)
+
+
+print("\n\n", test_list)
+print(test_set)
+
+# заменить 1 на 22 в set
+print("\n\n", test_list)
+print(test_set)
+
+
+
+# найти минимальные и максимальные значения
+
+exit_set = {97, 89, 4, 17, 99, 46, 50, 73, 81, 85}
+
+max_set = 0
+min_set = 100
+
+for i in exit_set:
+        print(i)
+
+# /HOMEWORK
+
+
+
+# NEW!   dict
+# пустой dict сщздается с помощью my_dict = {}  
+my_dict_1 = {}
+print(type(my_dict_1))
+
+my_dict_2 = {'my_key' : 'my_key'}
+print(my_dict_2)
+
+# не работает 
+# my_dict_3 = dict(exit_set)
+
+
+
+# dict это set : list
+
+# coding
+some_list_1 = [(1,2)]
+print(some_list_1)
+print(type(some_list_1))
+
+some_list_2 = [(1,2),3,4]
+print(some_list_2)
+print(type(some_list_2))
+
+some_list_3 = {'my_key_2' : None}
+print(some_list_3)
+print(type(some_list_3))
+
+some_list_4 = dict(x=1, y=2)
+print(some_list_4)
+print(type(some_list_4))
+
+some_list_5 = dict(x = (1,2), y = 2)
+print(some_list_5)
+print(type(some_list_5))
+
+
+some_list_6 = dict(x=1)
+print(some_list_6)
+print(type(some_list_6))
+
+some_list_7 = dict.fromkeys(exit_set)
+print(some_list_7)
+print(type(some_list_7))
+
+some_list_7['один'] = 99
+print(some_list_7)
+print(type(some_list_7))
+
+some_list_7['один'] = 99
+print(some_list_7)
+print(type(some_list_7))
+
+
+some_list_7.get('один', 'Нет ключа')
+print(some_list_7)
+print(type(some_list_7))
+
+some_list_7.pop
+print(some_list_7)
+print(type(some_list_7))
+
+
+
+
+
+
