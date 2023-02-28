@@ -1,6 +1,6 @@
 # 27.02.2023
 # dict 
-# # CRUD U = setdefault - update   get - read R
+# # CRUD U(update) = setdefault - update  R(read) = get 
 
 
 
@@ -74,8 +74,6 @@ print(new_dict)
 # get использует много русурсов
 # под капоом get лежит try except
 
-
-# CRUD  R = get U = setdefault - update
 
 # setdefault = под капотом = test_dict[1] = None
 # None при запуске Python сразу же создается      один единственный None
